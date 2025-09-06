@@ -1,0 +1,29 @@
+Step >1
+Win + R (Run Box) 
+Write gpedit.msc and then ok
+Open Group Policy and then Go to 
+(Local Computer Policy)
+
+>Administrative Template
+>Network
+>Lanman Workstation
+=> ( Enable Insecure guest policy Logons)
+Open TAB and Then Enable after SAVE OK and Close.
+
+Step >2
+> Start Bar and Write ( Registry Editor ) open as Run Administrator)
+> open Registry Editor box
+> Go to 
+> Computer\
+> HKEY_LOCAL_MACHINE\
+> SYSTEM\
+> CurrentControlSet\
+> Services\
+> LanmanWorkstation >= Parameters
+
+Create New Value File (DWOR-32bit) 
+in new File write this (AllowInsecureguestAuth) and Save File and the Value is (1)
+the ok and Close after Close the Box and 
+Restart the Windows 10/11, after will bee access the overall access Cloud Storage.
+End.
+ 
